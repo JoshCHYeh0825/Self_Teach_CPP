@@ -11,11 +11,17 @@ The only distinction type is their size.
 
 int: Whole number data type, 4 Bytes large (8b per Byte, 32b in total, compiler dependent), ranges from -(2^31) <--> (2^31 - 1).
 unsigned int: int data type but can only exist as an absolute/positive whole number, range from 0 <--> 2^32.
-char: Characters, 1B of data, can be assigned as character or number
+char: Characters, 1B of data, can be assigned as character or number.
 short: 2B of data
 long: 4B of data (Compiler dependent)
 long long: 8B of data
 
+You can assign any variable certain values, it is what you output via cout that would determine how it is outputted
+i.e) cout char a (a = 65) would give the character a instead of 65. But if you change it to int or any numerical data type it will output 65.
 
+float: Decimal value with 4B of data
+
+To assign a float value:
+float var_name = XXF - Append the number with a capital F, otherwise it will recognize it as a double.
 
 */
