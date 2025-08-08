@@ -24,4 +24,12 @@ float: Decimal value with 4B of data
 To assign a float value:
 float var_name = XXF - Append the number with a capital F, otherwise it will recognize it as a double.
 
+
+bool: Boolean, True or False, 1 or 0, 1B Large
+
+sizeof() checks the size of the variable/data type, outputs the size in Bytes.
+
+Pointers (*, data_type*): 
+References (&, data_typre&):
+
 */
