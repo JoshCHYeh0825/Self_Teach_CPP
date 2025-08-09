@@ -16,11 +16,6 @@ Using #include to include the header file; we declare the function signature in 
 #include <iostream>
 #include "Log.h"
 
-void Log(const char* message)
-{
-    std::cout << message << std::endl;
-}
-
 int main()
 {
     InitLog();
