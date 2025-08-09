@@ -9,10 +9,12 @@ and it will be call-able in the file.
 
 Instead of needing to constantly declare functions we use the header file.
 
-Using #include to include the header file
+Using #include to include the header file; we declare the function signature in the header file.
+
 */
 
 #include <iostream>
+#include "Log.h"
 
 void Log(const char* message)
 {
@@ -21,6 +23,7 @@ void Log(const char* message)
 
 int main()
 {
+    InitLog();
     Log("Hello World!");
     std::cin.get();
 }
