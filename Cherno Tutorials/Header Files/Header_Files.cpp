@@ -9,7 +9,6 @@ and it will be call-able in the file.
 
 Instead of needing to constantly declare functions we use the header file.
 
-Using #include to include the header file
 */
 
 #include <iostream>
