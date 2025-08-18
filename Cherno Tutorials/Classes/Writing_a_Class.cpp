@@ -1,9 +1,9 @@
-#include <iostream>
 
+#include <iostream>
 class Log
 {
 public:
-    const int LovLegelError = 0;
+    const int LogLevelError = 0;
     const int LogLevelWarning = 1;
     const int LogLevelInfo = 2;
 private:
@@ -38,5 +38,7 @@ int main()
     Log log;
     log.SetLevel(log.LogLevelWarning);
     log.Warn("Warning!");
+    log.Error("Error!");
+    log.Info("Hello!");
     std::cin.get();
 }
