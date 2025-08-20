@@ -11,10 +11,10 @@ class Entity
 public:
     float X, Y;  
 
-    Entity() // Use the name of the method, this is the constructor
+    Entity(float x, float y) // Use the name of the method, this is the constructor
     {
-        X = 0.0f;
-        Y = 0.0f;
+        X = x;
+        Y = y;
     }
     
     void Print()
@@ -25,9 +25,9 @@ public:
 
 int main()
 {
-    Entity e;
-    std::cout << e.X << std::endl;
+    Entity e(10.0f, 5.0f);
     e.Print();
+
     std::cin.get();
 
     // Without declaring a constructor we have one by default but it does nothing 
