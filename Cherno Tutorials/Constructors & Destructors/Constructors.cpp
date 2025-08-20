@@ -23,8 +23,21 @@ public:
     }
 };
 
+class Log
+{
+public:
+    Log() = delete; // Removes the defaultl constructor so it can't be called
+    static void Write()
+    {
+
+    }
+};
+
 int main()
 {
+    Log::Write();
+    Log 1;
+
     Entity e(10.0f, 5.0f);
     e.Print();
 
