@@ -11,7 +11,7 @@ class Entity
 public:
     float X, Y;  
 
-    void Init()
+    Entity() // Use the name of the method, this is the constructor
     {
         X = 0.0f;
         Y = 0.0f;
@@ -26,7 +26,6 @@ public:
 int main()
 {
     Entity e;
-    e.Init();
     std::cout << e.X << std::endl;
     e.Print();
     std::cin.get();
