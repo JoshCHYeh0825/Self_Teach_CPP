@@ -29,4 +29,6 @@ int main()
     std::cout << e.X << std::endl;
     e.Print();
     std::cin.get();
+
+    // Without declaring a constructor we have one by default but it does nothing 
 }
