@@ -4,7 +4,10 @@
 class Entity
 {
     public:
-        std::string GetName() { return "Entity"; }
+        virtual std::string GetName() { return "Entity"; }
+        //virtual introduces dynamic dispatch which compilers typically implement via a V Table
+        //V table is a virtual table which maps all of the virutal functions of the base call
+        // Table can map the virtual functions to the correct overwritten function
 };
 
 class Player : public Entity
@@ -15,7 +18,7 @@ class Player : public Entity
         Player(const std::string& name)
             : m_Name(name) {}
 
-        std::string GetName() { return m_Name; }
+        std::string GetName() override { return m_Name; } //override indicates its an overriden function
 };
 
 void PrintName(Entity* entity)
@@ -31,8 +34,5 @@ int main()
     Player* p = new Player("Taco");
     PrintName(p);
     
-    Entity* entity = p;
-    std::cout << entity->GetName() << std::endl;
-
     std::cin.get();
 }
